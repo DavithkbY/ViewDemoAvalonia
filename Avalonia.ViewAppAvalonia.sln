@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{5D726EAC-C8F7-4C3D-8599-1D216A662295}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cells", "..\..\Downloads\wpf-samples-master\screens\ScreenDemo\Cells\Cells.csproj", "{0360C12D-A81F-41AC-B884-3B885F553447}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D726EAC-C8F7-4C3D-8599-1D216A662295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D726EAC-C8F7-4C3D-8599-1D216A662295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D726EAC-C8F7-4C3D-8599-1D216A662295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D726EAC-C8F7-4C3D-8599-1D216A662295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0360C12D-A81F-41AC-B884-3B885F553447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0360C12D-A81F-41AC-B884-3B885F553447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0360C12D-A81F-41AC-B884-3B885F553447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0360C12D-A81F-41AC-B884-3B885F553447}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+<Window x:Class="View.MainWindow" xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        xmlns:screens="clr-namespace:View.Screens"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Title="MainWindow" Height="450" Width="800">
+    <ContentControl Content="{Binding CurrentScreen.Value}">
+        <ContentControl.Resources>
+            <!--
+                Here we define what to show if CurrentScreen.Value contains a ScreenAViewModel object
+            -->
+            <DataTemplate DataType="{x:Type local:ScreenAViewModel}">
+                <!-- We could place all controls in here, but it's cleaner to put it in a separate XAML, see Screens/ScreenA.xaml -->
+                <screens:ScreenA />
+            </DataTemplate>
+
+            <!--
+                Here we define what to show if CurrentScreen.Value contains a ScreenBViewModel object
+            -->
+            <DataTemplate DataType="{x:Type local:ScreenBViewModel}">
+                <screens:ScreenB />
+            </DataTemplate>
+
+            <!--
+                Here we define what to show if CurrentScreen.Value contains a ScreenCViewModel object
+            -->
+            <DataTemplate DataType="{x:Type local:ScreenCViewModel}">
+                <screens:ScreenC />
+            </DataTemplate>
+        </ContentControl.Resources>
+    </ContentControl>
+</Window>
