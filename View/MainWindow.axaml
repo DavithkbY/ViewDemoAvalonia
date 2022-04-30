@@ -7,7 +7,7 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         Title="MainWindow" Height="450" Width="800">
     <ContentControl Content="{Binding CurrentScreen.Value}">
-        <ContentControl.Resources>
+        <ContentControl.DataTemplates>
             <!--
                 Here we define what to show if CurrentScreen.Value contains a ScreenAViewModel object
             -->
@@ -29,6 +29,6 @@
             <DataTemplate DataType="{x:Type local:ScreenCViewModel}">
                 <screens:ScreenC />
             </DataTemplate>
-        </ContentControl.Resources>
+        </ContentControl.DataTemplates>
     </ContentControl>
 </Window>
